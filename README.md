@@ -27,7 +27,7 @@
 CSS3的alternate 可以完成4、5,边框的移动可以用伪元素完成
 
 - 之后就按照1先画个草图o(*^＠^*)o
-
+```html
           <div class="wrapper">           
             <div class="load">
                 <div class="white"></div>
@@ -35,6 +35,7 @@ CSS3的alternate 可以完成4、5,边框的移动可以用伪元素完成
                 <div class="red"></div>
             </div>
         </div>
+```
         
 - 对应样式
 ```css
