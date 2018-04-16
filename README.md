@@ -1,5 +1,5 @@
 # css3
-## Pretty Loder
+## Pretty Loader
  
   看到一个loader的效果图感觉挺有意思，花点儿时间搞一搞
 - 想法
@@ -111,4 +111,73 @@ CSS3的alternate 可以完成4、5,边框的移动可以用伪元素完成
 - 为before和after定制专属动画 <sub>ps:这个需要在浏览器慢慢调~</sub>
 
 
+```css
+    /* keyframes */
+@keyframes border-before {
+    0% {
+      width: 0;
+      height: 0;
+      border-right-color: transparent;
+    }
+    5.99% {
+      border-right-color: transparent;
+    }
+    6% {
+        height: 0;
+        width: 100%;
+        border-right-color: #000;
+      }
+    25%,100% {
+      height: 100%;
+      width: 100%;
+    }
+}
+  @keyframes border-after {
+    0% ,24.99%{
+      width: 0;
+      height: 0;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+    25% {
+        border-left-color: transparent;
+        border-bottom-color: #000;
 
+    }
+    36.99%{
+        border-left-color: transparent;
+    }
+    37% {
+		      height: 0;
+        width: 100%;
+		      border-left-color: #000;
+    }
+    50%,
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
+    
+```
+- 内部方块的动画大同小异
+
+```css
+  @keyframes red {
+    0%,
+    50% {
+      width: 0;
+      opacity: 0;
+    }
+    50.01% {
+      opacity: 1;
+    }
+    65%,
+    100% {
+      width: 27%;
+      opacity: 1;
+    }
+  }
+
+```
+基本完成\(^o^)/~
